@@ -42,8 +42,8 @@ const Profile = () => {
                                         <Text color={'gray.500'}>Chat</Text>
                                     </VStack>
                                     <VStack>
-                                        <Icon name='file-document-outline' type='material-community' color={'#528bff'} />
-                                        <Text color={'gray.500'}>Docks</Text>
+                                        <Icon name='image-outline' type='material-community' color={'#528bff'} />
+                                        <Text color={'gray.500'}>Gallery</Text>
                                     </VStack>
                                     <VStack>
                                         <Icon name='map-marker-outline' type='material-community' color={'#528bff'} />

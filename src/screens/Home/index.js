@@ -15,10 +15,10 @@ const Home = () => {
             title: 'Mustafa',
             description: 'Show history',
             coords: {
-                latitude: -36.8717821,
-                longitude: 174.63576,
+                latitude: -36.8547821,
+                longitude: 174.63176,
             },
-            imageUrl: 'https://cdn-icons-png.flaticon.com/512/4140/4140048.png',
+            imageUrl: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
         },
         {
             title: 'Raghad',
@@ -27,7 +27,25 @@ const Home = () => {
                 latitude: -36.8692715,
                 longitude: 174.6241367,
             },
-            imageUrl: 'https://cdn-icons-png.flaticon.com/512/4140/4140047.png',
+            imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        },
+        {
+            title: 'Zahra',
+            description: 'Show history',
+            coords: {
+                latitude: -36.8672715,
+                longitude: 174.6141367,
+            },
+            imageUrl: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        },
+        {
+            title: 'Wadi',
+            description: 'Show history',
+            coords: {
+                latitude: -36.8612715,
+                longitude: 174.6101367,
+            },
+            imageUrl: 'https://images.unsplash.com/photo-1614289371518-722f2615943d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
         },
     ])
 
@@ -92,7 +110,7 @@ const Home = () => {
                                     alt={item.title}
                                     source={{ uri: item.imageUrl }}
                                     // style={{ width: 50, height: 50 }}
-                                    style={{ width: 26, height: 28 }}
+                                    style={{ width: 26, height: 28, borderRadius: 99 }}
                                     resizeMode='center'
                                     resizeMethod='resize'
                                 />

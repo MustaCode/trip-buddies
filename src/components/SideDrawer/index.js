@@ -63,11 +63,14 @@ const SideDrawer = () => {
       >
         <Box backgroundColor='rgba(0, 0, 0, 0.5)' position={'absolute'} w={'100%'} h={'100%'} />
         <VStack alignItems={'center'} justifyContent='center' flex={1}>
-          <Avatar bg="green.500" size="lg" source={{
-            uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-          }}>
-            AJ
-          </Avatar>
+          <Pressable onPress={() => navigation.navigate('Profile')}>
+            <Avatar bg="green.500" size="lg" source={{
+              uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            }}>
+              AJ
+            </Avatar>
+          </Pressable>
+
           <Text color={'white'} fontSize={18}>Raghad Al Sadoud</Text>
           <Text color={'white'} fontSize={12}>@raghad</Text>
         </VStack>

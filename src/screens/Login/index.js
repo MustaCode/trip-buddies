@@ -12,6 +12,13 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false)
     const [index, setIndex] = React.useState(0);
 
+    const handleAuth = () => {
+
+        if (username !== 'raghad@tb.com' || password !== 'raghad') return alert('Incorrect username or password')
+
+        navigation.navigate('Home')
+    }
+
     return (
         <VStack safeArea h='100%' w='100%' bg='white' >
             {/* <Box justifyContent='center'> */}
@@ -19,19 +26,21 @@ const Login = () => {
                 value={index}
                 onChange={(e) => setIndex(e)}
                 indicatorStyle={{
-                    backgroundColor: 'orange',
+                    backgroundColor: '#0688bf',
                     height: 3,
                 }}
                 variant="primary"
             >
                 <Tab.Item
                     title="SIGN IN"
-                    titleStyle={{ fontSize: 12 }}
+                    titleStyle={{ fontSize: 12, color: 'black' }}
+                    containerStyle={{ backgroundColor: 'white' }} 
                 // icon={{ name: 'timer', type: 'ionicon', color: 'white' }}
                 />
                 <Tab.Item
                     title="SIGN UP"
-                    titleStyle={{ fontSize: 12 }}
+                    titleStyle={{ fontSize: 12, color: 'black'  }}
+                    containerStyle={{ backgroundColor: 'white' }} 
                 // icon={{ name: 'heart', type: 'ionicon', color: 'white' }}
                 />
             </Tab>
@@ -81,7 +90,7 @@ const Login = () => {
                             autoCorrect={false}
                         />
                         <Text>FORGOT PASSWORD?</Text>
-                        <Button w='100%' onPress={() => navigation.navigate('Home')}>SIGN IN</Button>
+                        <Button w='100%' onPress={handleAuth}>SIGN IN</Button>
                     </VStack>
                 </TabView.Item>
                 <TabView.Item style={{ backgroundColor: 'white', width: '100%', alignItems: 'center' }}>
